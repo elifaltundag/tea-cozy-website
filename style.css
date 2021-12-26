@@ -1,22 +1,27 @@
 /* Start from small screens and move up to bigger ones */
 :root {
+    --bground-color: #000000;
     --text-color: #fff5ee;
     --header-height: 69px;
+    --opacity: 0.5;
+}
+
+html {
+    font-size: 22px;
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
 }
 
 body {
-    background-color: #000000;
+    background-color: var(--bground-color);
     color: var(--text-color);
     font-family: Helvetica, Arial, sans-serif;
     /* font-size: 22px; */
-    opacity: 0.9;
+    
     text-align: center;
     display: flex;
     justify-content: center;
@@ -32,6 +37,7 @@ header {
     border-bottom: 1px solid #FFF5EE;
     display: flex;
     align-items: center;
+    background-color: var(--bground-color);
 
 }
 
@@ -54,12 +60,14 @@ nav li {
 
 li a {
     color: var(--text-color);
+    opacity: var(--opacity);
 }
 
 .logo {
     height: 50px;
     padding-left: 10px;  
     border: 1px dotted aqua;
+    opacity: var(--opacity);
 }
 
 
@@ -74,10 +82,31 @@ main, footer {
 
 
 #mission {
-    border: 1px dotted aqua;
     width: 1200px;
     height: 700px;
-  
+    background-image: url(./images/mission-background.jpg);
+    background-color: var(--bground-color);
+    opacity: var(--opacity);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mission-text {
+    border: 1px dotted aqua;
+    height: 200px;
+    opacity: 1;    
+    width: 100%;
+    background-color: var(--bground-color);
+    /*
+    display: flex;
+    align-content: center;
+    */
+}
+
+#mission-text h2,h4 {
+    
+    border: 1px dotted aqua;
 }
 
 #featured-tea {
