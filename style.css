@@ -1,0 +1,95 @@
+/* Start from small screens and move up to bigger ones */
+:root {
+    --text-color: #fff5ee;
+    --header-height: 69px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background-color: #000000;
+    color: var(--text-color);
+    font-family: Helvetica, Arial, sans-serif;
+    /* font-size: 22px; */
+    opacity: 0.9;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: var(--header-height);
+    border-bottom: 1px solid #FFF5EE;
+    display: flex;
+    align-items: center;
+
+}
+
+nav {
+    width: 100%;
+    float: right;    
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    border: 1px dotted aqua;
+}
+nav li {
+    display: inline;
+    text-decoration: underline;
+    padding: 0 1%;
+}
+
+li a {
+    color: var(--text-color);
+}
+
+.logo {
+    height: 50px;
+    padding-left: 10px;  
+    border: 1px dotted aqua;
+}
+
+
+
+main, footer {
+    position: relative;
+    top: var(--header-height);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#mission {
+    border: 1px dotted aqua;
+    width: 1200px;
+    height: 700px;
+  
+}
+
+#featured-tea {
+    border: 1px dotted aqua;
+    width: 1000px;
+    height: 500px;
+  
+}
+
+#locations {
+    border: 1px dotted aqua;
+    width: 1200px;
+    height: 500px;
+ 
+}
