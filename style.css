@@ -114,9 +114,28 @@ main, footer {
 #featured-tea {
     border: 1px dotted aqua;
     width: 1000px;
-    height: 500px;
     opacity: var(--opacity);
   
+}
+
+#tea-samples-box {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tea-samples {
+    border: 1px dotted aqua;
+    width: 300px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+    padding-top: 10px;
+    
+}
+
+.tea-samples h4 {
+    padding-top: 10px;
 }
 
 #locations {
