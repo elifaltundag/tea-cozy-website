@@ -92,27 +92,30 @@ main, footer {
     align-items: center;
 }
 
-#mission-text {
+#mission-text-box, #featured-tea-header {
     border: 1px dotted aqua;
-    height: 200px;
     opacity: 1;    
     width: 100%;
     background-color: var(--bground-color);
-    /*
     display: flex;
+    flex-direction: column;
     align-content: center;
-    */
 }
 
-#mission-text h2,h4 {
-    
+.mission-text, .featured-tea-text {
+    display: block;
     border: 1px dotted aqua;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
 }
+
 
 #featured-tea {
     border: 1px dotted aqua;
     width: 1000px;
     height: 500px;
+    opacity: var(--opacity);
   
 }
 
