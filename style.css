@@ -102,6 +102,10 @@ main, footer {
     align-content: center;
 }
 
+#featured-tea-header{
+    padding-top: var(--header-height);
+}
+
 .mission-text, .featured-tea-text {
     display: block;
     border: 1px dotted aqua;
@@ -129,13 +133,12 @@ main, footer {
     width: 300px;
     display: flex;
     flex-direction: column-reverse;
-    align-content: center;
-    padding-top: 10px;
-    
+    align-content: center;   
 }
 
 .tea-samples h4 {
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #locations {
