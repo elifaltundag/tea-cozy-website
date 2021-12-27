@@ -6,6 +6,7 @@
     --opacity: 0.5;
 }
 
+/* General styling */
 html {
     font-size: 22px;
 }
@@ -29,7 +30,16 @@ main {
     justify-content: center;
 }
 
+main, footer {
+    position: relative;
+    top: var(--header-height);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+
+/* Header: logo & nav bar */
 header {
     position: fixed;
     z-index: 1;
@@ -68,16 +78,7 @@ li a {
 }
 
 
-
-main, footer {
-    position: relative;
-    top: var(--header-height);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
+/* Section 1: Mission */
 #mission {
     width: 1200px;
     height: 700px;
@@ -109,6 +110,7 @@ main, footer {
 }
 
 
+/* Section 2: Featured Tea, some are above */
 #featured-tea { 
     width: 1000px; 
 }
@@ -131,8 +133,7 @@ main, footer {
     padding-bottom: 10px;
 }
 
-
-
+/* Section 3: Locations */
 #locations {
     width: 1200px;
     height: 500px;
@@ -171,19 +172,19 @@ main, footer {
 }
 
 
-#contact {
-    height: 200px;
-    margin-top: 20px;
-    line-height: 2em;
-}
-
-
+/* Footer: contact & copyright */
 footer {
     display: block;
 }
 
 footer h2 {
     margin-bottom: 25px;
+}
+
+#contact {
+    height: 200px;
+    margin-top: 20px;
+    line-height: 2em;
 }
 
 #copyright {
